@@ -1,0 +1,32 @@
+body{
+    margin: 0;
+}
+
+.main {
+    background-image: url('https://i.pinimg.com/originals/4f/f9/fe/4ff9fefafc58789a76bc3a48ce4177b8.jpg');
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 5%;
+    background-repeat: no-repeat;
+}
+
+.title {
+    font-size: xx-large;
+    color: rgba(240, 240, 240, 0.808);
+    margin-bottom: 2%;
+    text-align: center;
+    font-weight: bold;
+}
+
+.summery {
+    color: rgba(237, 237, 237, 0.909);
+    /* width: 75%; */
+    /* margin-top: 2%; */
+    font-weight: 700;
+}
+
+.second-title {
+    font-size: larger;
+    font-weight: 800;
+}

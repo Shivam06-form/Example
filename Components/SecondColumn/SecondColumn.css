@@ -1,0 +1,73 @@
+.second {
+    display: block;
+    width: 100%;
+    margin-top: 5%;
+
+}
+
+.fps-container {
+    display: block;
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+    /* background-image: linear-gradient(to left, rgba(239, 239, 239, 0.521), rgba(81, 81, 68, 0.772)); */
+}
+
+.fps-card {
+    gap: 15px;
+    transition: all 500ms ease-in-out;
+    width: 300%;
+    display: flex;
+}
+
+.platform {
+    display: flex;
+    justify-content: space-between;
+    width: 40%;
+    margin-top: 1%;
+}
+
+
+
+
+.fps-games {
+    border-style: groove;
+    height: 20rem;
+    color: aliceblue;
+    border-radius: 10px;
+    width: 100%;
+    cursor: pointer;
+    box-shadow: 10px 5px 5px rgb(81, 77, 77);
+    text-decoration: none;
+}
+
+.fps-games div {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.fps-games img {
+    width: 100%;
+    border-radius: 10px;
+    height: 15rem;
+}
+
+.button-container {
+    display: flex;
+    width: 50%;
+    margin: auto;
+    justify-content: space-between;
+    margin-top: 2%;
+}
+
+.button-container button {
+    border-radius: 100%;
+    border: none;
+    cursor: pointer;
+    height: 10px;
+    width: 5%;
+}
+
+.selected-button {
+    color: whitesmoke;
+    background-color: goldenrod;
+}

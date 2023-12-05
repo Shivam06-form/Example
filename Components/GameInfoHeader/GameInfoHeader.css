@@ -1,0 +1,25 @@
+.gameinfoheader {
+    display: block;
+    padding: 0;
+    border-bottom-style: groove;
+    border-bottom: 1px solid black
+}
+
+
+.gameinfoheader ul {
+    padding: 0%;
+    list-style: none;
+    display: flex;
+    gap: 4%;
+}
+
+
+.gameinfoheader ul li {
+    transition: all 800ms;
+    cursor: pointer;
+}
+
+.gameinfoheader ul li:hover {
+    transition: all 800ms;
+    background-color: aquamarine;
+}

@@ -1,0 +1,65 @@
+/* .gameinfo {
+} */
+
+.gameinfo-header {
+    width: auto;
+    margin: none;
+    background-color: black;
+}
+
+.gameinfo-content {
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    margin: auto;
+    margin-top: 4%;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.gameinfo-card {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    /* background-color: aquamarine; */
+    gap: 5%;
+}
+
+
+.gameinfo-title {
+    font-weight: bold;
+    font-size: xx-large;
+}
+
+.gameinfo-summery {
+    font-size: 15px;
+    color: black;
+    font-weight: 700;
+}
+
+
+.avalibale {
+    font-weight: 800;
+}
+
+.gameinfo-tag {
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    padding: 0;
+    font-weight: 700;
+    margin-top: 4%;
+}
+
+.gameinfo-tag-list  {
+    display: flex;
+    padding: 0;
+    justify-content: space-between;
+    width: 75%;
+}
+
+.gameinfo-tag-list li {
+    list-style: none;
+    background-color: rgb(116, 121, 121);
+    padding: 1%;
+    color: wheat;
+}

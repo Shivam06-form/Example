@@ -1,0 +1,33 @@
+.first {
+    display: block;
+    width: 100%;
+    margin-top: 5%;
+}
+
+.first img {
+    width: 40%;
+    border-radius: 10px;
+}
+
+.first-content {
+    display: flex;
+    justify-content: space-between;
+    color: rgba(236, 222, 222, 0.541);
+    margin-top: 5%;
+}
+
+.first-discription {
+    width: 50%;
+}
+
+.download-list {
+    display: flex;
+    gap: 4%;
+    width: 50%;
+    margin-top: 5%;
+}
+
+.download-list img {
+    width: 25px;
+    height: 20px;
+}
