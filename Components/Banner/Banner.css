@@ -39,4 +39,8 @@
         font-size: small;
         gap: 10px
     }
+
+    .banner-icon-container {
+        width: 100%;
+    }
 }

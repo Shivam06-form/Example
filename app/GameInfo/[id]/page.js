@@ -41,7 +41,7 @@ export default function RandomId(props) {
              with the player experiencing the action directly through the eyes of the main character
             `}</div>
           <div>
-            <div className="avalibale">Avaliable in</div>
+            <div className="avalibale">Available in</div>
             <div >
               {Game[0].platform.map((game) =>
                 <div className="gameinfo-platform" key={game.id} >  <Link href={game.Url} target='_blank'>

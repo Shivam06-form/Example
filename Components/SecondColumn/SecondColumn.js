@@ -14,28 +14,28 @@ const RenderFpsGAmes = FPSGAMES.GAMES.map((fps) => {
       rel='noreferrer'
       href={`GameInfo/${fps.id}`}>
       {/* <img src={fps.imageUrl} alt={fps.name} /> */}
-      < Image src={fps.imageUrl} alt={fps.name} width={175} height={175} />
+      < Image src={fps.imageUrl} alt={fps.name} width={250} height={250} />
       <siv>{fps.name}</siv>
       <div className='platform'>
         <div
         // className='summery'
-        >Avaliable on</div>
-        {fps.steam &&
-          <Link href={fps.steam} target='_blank' rel='noreferrer'>
-            <Image
-              style={{ width: "20px", height: "20px" }}
-              width={2} height={24}
-              src={'https://play-lh.googleusercontent.com/52_DMY5417awaEgJf3_9mWgEuO2t1JfkGab8kM-LD6l5u6cGm_1-GsoQ_IyWFHdbkA'}
-              alt={fps.name} />   </Link>}
-        {fps.epic && <Link href={fps.epic} target='_blank' rel='noreferrer'>
+        >Available on</div>
+        <div className='platform-link' >
+          {fps.platform.map((game) => {
+            return (
+              <Link
+                key={game.id}
+                href={game.Url} target='_blank' rel='noreferrer' >
+                <Image
+                  style={{ width: "80%", height: "80%" }}
+                  width={24} height={24}
+                  src={game.image}
+                  alt={fps.name} />
+              </Link>
+            )
+          })}
+        </div>
 
-          <Image
-            style={{ width: "20px", height: "20px" }}
-            width={24} height={24}
-            src={'https://lh3.googleusercontent.com/proxy/5VUQp85MIu2HYAnHQ8cHFPNRBcC4v6Z1h2abGug_9WosLoGLEl6YO8iwUW6hUxBYQ7XOtVkpG4FAsae1pRSLIdNecBb5htelvKO3z6JvY3TDeW9Q=s0-d'}
-            alt={fps.name} />
-
-        </Link>}
       </div>
     </a >
   )

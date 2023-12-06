@@ -3,7 +3,7 @@
     flex-direction: column;
     width: 100%;
     margin-top: 15%;
-    opacity: 100;
+    opacity: 50;
     transition: all 800ms ease-in-out;
     transform: translateY(-2rem)
 }
@@ -25,13 +25,23 @@
 
 .platform {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
-    width: 40%;
+    width: 95%;
     margin-top: 1%;
 }
 
 
+.platform-link {
+    width: 65%;
+    display: flex;
+    justify-content: space-between;
+}
 
+
+.platform-link a:hover {
+    background-color: rgb(171, 180, 177);
+}
 
 .fps-games {
     border-style: groove;
@@ -75,7 +85,7 @@
     background-color: goldenrod;
 }
 
-@media (max-width: 756px) {
+@media (max-width: 768px) {
     .fps-games {
         height: 10rem;
         font-size: x-small;
@@ -83,5 +93,14 @@
 
     .fps-games img {
         height: 5rem;
+    }
+
+    .platform {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .platform-link {
+        width: 100%;
     }
 }

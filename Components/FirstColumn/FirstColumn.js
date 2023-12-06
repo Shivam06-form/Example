@@ -35,7 +35,7 @@ const FirstColumn = ({setShowHeader}) => {
 
   return (
     <div className='first'>
-      <div className='title'>LATEST GAMES</div>
+      <div className='title'>POPULAR GAMES</div>
       <div
         onClick={() => {
 
@@ -53,7 +53,7 @@ const FirstColumn = ({setShowHeader}) => {
           <div className='download-list'>
             <summary
               style={{ fontWeight: "bold" }}
-            >Avaliable on</summary>
+            >Available on</summary>
             {LATEST[0].platform.map((game) => <a key={game.id} href={game.Url}
               target='_blank'
               rel='noreferrer'
@@ -79,7 +79,7 @@ const FirstColumn = ({setShowHeader}) => {
           <div className='download-list'>
             <summary
               style={{ fontWeight: "bold" }}
-            >Avaliable on</summary>
+            >Available on</summary>
             {LATEST[1].platform.map((game) => <a key={game.id} href={game.Url}
               target='_blank'
               rel='noreferrer'
@@ -106,7 +106,7 @@ const FirstColumn = ({setShowHeader}) => {
           <div className='download-list'>
             <summary
               style={{ fontWeight: "bold" }}
-            >Avaliable on</summary>
+            >Available on</summary>
             {LATEST[2].platform.map((game) => <a key={game.id} href={game.Url}
               target='_blank'
               rel='noreferrer'
