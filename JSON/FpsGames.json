@@ -1,64 +1,213 @@
 {
-    "FPS": [
+    "GAMES": [
         {
             "id": 1,
             "name": "Counter-Strike: Global Offensive",
             "imageUrl": "https://images7.alphacoders.com/587/587593.png",
-            "steam": "https://store.steampowered.com/app/730/CounterStrike_2/"
+            "steam": "https://store.steampowered.com/app/730/CounterStrike_2/",
+            "platform": [
+                {
+                    "id": 1,
+                    "Name": "https://store.steampowered.com/app/730/CounterStrike_2/",
+                    "image": "https://www.videogameschronicle.com/files/2019/03/1024px-Steam_icon_logo.svg_.png",
+                    "Url": "https://store.steampowered.com/app/730/CounterStrike_2/"
+                }
+            ]
         },
         {
             "id": 2,
             "name": "Call of Duty: Warzone",
             "steam": "https://store.steampowered.com/agecheck/app/1962663/",
-            "imageUrl": "https://cdn.mos.cms.futurecdn.net/f94W77ceivudNJpZbziJYg.jpg"
+            "imageUrl": "https://cdn.mos.cms.futurecdn.net/f94W77ceivudNJpZbziJYg.jpg",
+            "platform": [
+                {
+                    "id": 1,
+                    "Name": "STEAM",
+                    "image": "https://www.videogameschronicle.com/files/2019/03/1024px-Steam_icon_logo.svg_.png",
+                    "Url": "https://store.steampowered.com/agecheck/app/1962663/"
+                }
+            ]
         },
         {
             "id": 3,
             "name": "Valorant",
             "imageUrl": "https://images4.alphacoders.com/133/1337226.jpeg",
-            "epic": "https://store.epicgames.com/en-US/p/valorant"
+            "epic": "https://store.epicgames.com/en-US/p/valorant",
+            "platform": [
+                {
+                    "id": 1,
+                    "Name": "EPIC",
+                    "image": "https://www.videogameschronicle.com/files/2019/03/1024px-Steam_icon_logo.svg_.png",
+                    "Url": "https://store.epicgames.com/en-US/p/valorant"
+                }
+            ]
         },
         {
             "id": 4,
             "name": "Apex Legends",
             "imageUrl": "https://i.redd.it/qfqgrfrc5yf61.png",
-            "steam": "https://store.steampowered.com/app/1172470/Apex_Legends/"
+            "steam": "https://store.steampowered.com/app/1172470/Apex_Legends/",
+            "platform": [
+                {
+                    "id": 1,
+                    "Name": "STEAM",
+                    "image": "https://www.videogameschronicle.com/files/2019/03/1024px-Steam_icon_logo.svg_.png",
+                    "Url": "https://store.steampowered.com/app/1172470/Apex_Legends/"
+                }
+            ]
         },
         {
             "id": 5,
             "name": "Rainbow Six Siege",
             "imageUrl": "https://images5.alphacoders.com/132/1322943.jpg",
-            "steam": "https://store.steampowered.com/app/359550/Tom_Clancys_Rainbow_Six_Siege/"
+            "steam": "https://store.steampowered.com/app/359550/Tom_Clancys_Rainbow_Six_Siege/",
+            "platform": [
+                {
+                    "id": 1,
+                    "Name": "STEAM",
+                    "image": "https://www.videogameschronicle.com/files/2019/03/1024px-Steam_icon_logo.svg_.png",
+                    "Url": "https://store.steampowered.com/app/359550/Tom_Clancys_Rainbow_Six_Siege/"
+                }
+            ]
         },
         {
             "id": 6,
             "name": "Overwatch",
             "imageUrl": "https://wallpapers.com/images/featured/overwatch-dpacmg5qk3abi7qn.jpg",
-            "steam": "https://store.steampowered.com/app/2357570/Overwatch_2/"
+            "steam": "https://store.steampowered.com/app/2357570/Overwatch_2/",
+            "platform": [
+                {
+                    "id": 1,
+                    "Name": "STEAM",
+                    "image": "https://www.videogameschronicle.com/files/2019/03/1024px-Steam_icon_logo.svg_.png",
+                    "Url": "https://store.steampowered.com/app/2357570/Overwatch_2/"
+                }
+            ]
         },
         {
             "id": 7,
             "name": "Battlefield 2042",
             "imageUrl": "https://cdn.wallpapersafari.com/55/61/OQ4FLE.jpg",
-            "steam": "https: //store.steampowered.com/app/1517290/Battlefield_2042/?snr=1_7_7_151_150_1"
+            "steam": "https: //store.steampowered.com/app/1517290/Battlefield_2042/?snr=1_7_7_151_150_1",
+            "platform": [
+                {
+                    "id": 1,
+                    "Name": "STEAM",
+                    "image": "https://www.videogameschronicle.com/files/2019/03/1024px-Steam_icon_logo.svg_.png",
+                    "Url": "https: //store.steampowered.com/app/1517290/Battlefield_2042/?snr=1_7_7_151_150_1"
+                }
+            ]
         },
         {
             "id": 8,
             "name": "Halo Infinite",
             "imageUrl": "https://i.redd.it/rd5pfsapbhc51.png",
-            "steam": "https: //store.steampowered.com/app/1240440/Halo_Infinite/"
+            "steam": "https: //store.steampowered.com/app/1240440/Halo_Infinite/",
+            "platform": [
+                {
+                    "id": 1,
+                    "Name": "STEAM",
+                    "image": "https://www.videogameschronicle.com/files/2019/03/1024px-Steam_icon_logo.svg_.png",
+                    "Url": "https: //store.steampowered.com/app/1240440/Halo_Infinite/"
+                }
+            ]
         },
         {
             "id": 9,
             "name": "Titanfall 2",
             "imageUrl": "https://images.alphacoders.com/825/825908.jpg",
-            "steam": "https: //store.steampowered.com/app/1237970/Titanfall_2/?snr=1_7_7_151_150_1"
+            "steam": "https: //store.steampowered.com/app/1237970/Titanfall_2/?snr=1_7_7_151_150_1",
+            "platform": [
+                {
+                    "id": 1,
+                    "Name": "STEAM",
+                    "image": "https://www.videogameschronicle.com/files/2019/03/1024px-Steam_icon_logo.svg_.png",
+                    "Url": "https: //store.steampowered.com/app/1237970/Titanfall_2/?snr=1_7_7_151_150_1"
+                }
+            ]
         },
         {
             "id": 10,
             "name": "Doom Eternal",
             "imageUrl": "https://wallpapers.com/images/hd/doom-eternal-4k-jobqpopj1rikr6cr.jpg",
-            "steam": "https: //store.steampowered.com/agecheck/app/782330/"
+            "steam": "https: //store.steampowered.com/agecheck/app/782330/",
+            "platform": [
+                {
+                    "id": 1,
+                    "Name": "STEAM",
+                    "image": "https://www.videogameschronicle.com/files/2019/03/1024px-Steam_icon_logo.svg_.png",
+                    "Url": "https: //store.steampowered.com/agecheck/app/782330/"
+                }
+            ]
+        },
+        {
+            "id": 11,
+            "name": "Red Dead Redemption 2",
+            "title": "Red Dead Redemption 2",
+            "imageUrl": "https://assets.xboxservices.com/assets/f2/09/f2093a9f-81ef-4ddd-9128-7e409ab3e6ad.jpg?n=Red-Dead-Redemption-II_GLP-Page-Hero-1084_1920x1080.jpg",
+            "about": "Red Dead Redemption 2 is a 2018 action-adventure game developed and published by Rockstar Games.The game is the third entry in the  Red Dead series and a prequel to the 2010 game Red Dead Redemption",
+            "platform": [
+                {
+                    "id": 1,
+                    "Name": "STEAM",
+                    "image": "https://www.videogameschronicle.com/files/2019/03/1024px-Steam_icon_logo.svg_.png",
+                    "Url": "https://store.steampowered.com/app/1174180/red_dead_redemption_2/"
+                },
+                {
+                    "id": 2,
+                    "Name": "ROCKSTAR",
+                    "image": "https://1000logos.net/wp-content/uploads/2020/09/Rockstar-Games-logo.jpg",
+                    "Url": "https://www.rockstargames.com/reddeadredemption2/"
+                },
+                {
+                    "id": 3,
+                    "Name": "Epic",
+                    "image": "https://cdn1.unrealengine.com/UnrealTournament/3475636/com/epicgames/plugins/clientDownload/logo-epic-cb4399a7ee205610531057537937045e.png",
+                    "Url": "https://store.epicgames.com/en-US/p/red-dead-redemption-2"
+                }
+            ]
+        },
+        {
+            "id": 12,
+            "name": "GTA V",
+            "title": "Experince the Open World Of Grand Theft Auto V",
+            "imageUrl": "https://wallpapercave.com/wp/wp5334263.jpg",
+            "about": "Grand Theft Auto V is a 2013 action-adventure game developed by Rockstar North and published by Rockstar Games.It is the seventh main entry in the Grand Theft Auto series,following 2008's Grand Theft Auto IV, and the fifteenth instalment overall",
+            "platform": [
+                {
+                    "id": 1,
+                    "Name": "STEAM",
+                    "image": "https://www.videogameschronicle.com/files/2019/03/1024px-Steam_icon_logo.svg_.png",
+                    "Url": "https://store.steampowered.com/agecheck/app/271590/"
+                },
+                {
+                    "id": 2,
+                    "Name": "ROCKSTAR",
+                    "image": "https://1000logos.net/wp-content/uploads/2020/09/Rockstar-Games-logo.jpg",
+                    "Url": "https://www.rockstargames.com/gta-v"
+                },
+                {
+                    "id": 3,
+                    "Name": "Epic",
+                    "image": "https://cdn1.unrealengine.com/UnrealTournament/3475636/com/epicgames/plugins/clientDownload/logo-epic-cb4399a7ee205610531057537937045e.png",
+                    "Url": "https://store.epicgames.com/en-US/p/grand-theft-auto-v"
+                }
+            ]
+        },
+        {
+            "id": 13,
+            "name": "PUBG",
+            "title": "PUBG stands for PlayerUnknown's Battlegrounds",
+            "imageUrl": "https://th.bing.com/th/id/OIP.Xb3oFrbSp7c4_Vz50mdCHQAAAA?rs=1&pid=ImgDetMain",
+            "about": "PUBG is a player versus player shooter game in which up to one hundred players fight in a battle royale, a type of large-scale last man standing deathmatch where players fight to remain the last alive.",
+            "platform": [
+                {
+                    "id": 1,
+                    "Name": "STEAM",
+                    "image": "https://www.videogameschronicle.com/files/2019/03/1024px-Steam_icon_logo.svg_.png",
+                    "Url": "https://store.steampowered.com/app/578080/PUBG_BATTLEGROUNDS/"
+                }
+            ]
         }
     ]
 }

@@ -8,13 +8,11 @@ import { Observer } from '../Custom/Observer';
 
 
 
-const RenderFpsGAmes = FPSGAMES.FPS.map((fps) => {
-
-
+const RenderFpsGAmes = FPSGAMES.GAMES.map((fps) => {
   return (
     <a key={fps.id} className={`fps-games `}
       rel='noreferrer'
-      href={`GameInfo/FPS/${fps.id}`}>
+      href={`GameInfo/${fps.id}`}>
       {/* <img src={fps.imageUrl} alt={fps.name} /> */}
       < Image src={fps.imageUrl} alt={fps.name} width={175} height={175} />
       <siv>{fps.name}</siv>
@@ -49,10 +47,6 @@ const SecondColumn = () => {
   const Ref = useRef(null)
 
   const getObserver = Observer({ RefProp: Ref })
-
-
-  console.log(getObserver.show)
-
 
 
   return (

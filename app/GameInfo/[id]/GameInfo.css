@@ -67,6 +67,24 @@
     color: wheat;
 }
 
+.gameinfo-platform {
+    display: flex;
+    justify-content: space-between;
+    width: 30%;
+    align-items: center;
+}
+
+.gameinfo-platform a {
+    width: fit-content;
+    text-decoration: none;
+    color: black;
+}
+
+.gameinfo-platform img {
+    height: 25%;
+    width: 25%;
+}
+
 @media (max-width: 965px) {
     .gameinfo-content {
         width: 95%;
@@ -84,5 +102,10 @@
 
     .gameinfo-card {
         width: 100%;
+    }
+
+    .gameinfo-platform img {
+        height: 25%;
+        width: 25%;
     }
 }

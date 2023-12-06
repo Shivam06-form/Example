@@ -1,17 +1,21 @@
 "use client";
 
-import FPSGAMES from '../../../../JSON/FpsGames.json'
+import { GAMES } from '../../..//JSON/FpsGames.json'
 import React from "react";
 import Image from "next/image";
 import './GameInfo.css'
 import Link from "next/link";
-import GameInfoHeader from '../../../../Components/GameInfoHeader/GameInfoHeader'
+import GameInfoHeader from '../../../Components/GameInfoHeader/GameInfoHeader'
 
 
 export default function RandomId(props) {
 
-  const ID = (window.location.pathname.replace("/GameInfo/FPS", ""))
-  const Game = (FPSGAMES.FPS.filter((fps) => `/${fps.id}` === ID))
+
+
+  const ID = (window.location.pathname.replace("/GameInfo", ""))
+  const Game = (GAMES.filter((fps) => `/${fps.id}` === ID))
+
+  console.log(Game)
 
   return (<React.Fragment>
     <metadata>
@@ -30,7 +34,7 @@ export default function RandomId(props) {
           <div
             className="gameinfo-title"
           >{Game[0].name}</div>
-          <div className="gameinfo-summery">{Game[0].info ? Game[0].info :
+          <div className="gameinfo-summery">{Game[0].about ? Game[0].about :
             `A first-person shooter (FPS) is a
              video game centered on gun fighting and other weapon-based 
              combat seen from a first-person perspective, 
@@ -38,9 +42,15 @@ export default function RandomId(props) {
             `}</div>
           <div>
             <div className="avalibale">Avaliable in</div>
-            <div className="gameinfo-platform">
-              {Game[0].steam && <Link href={Game[0].steam} target='_blank'>STEAM</Link>}
-              {Game[0].epic && <Link href={Game[0].epic} target='_blank' >EPIC</Link>}
+            <div >
+              {Game[0].platform.map((game) =>
+                <div className="gameinfo-platform" key={game.id} >  <Link href={game.Url} target='_blank'>
+                  {game.Name}
+                </Link>
+                <Image src={game.image} alt={game.Name} width={100} height={100}/>
+                </div>
+              )}
+
             </div>
           </div>
           <div className='gameinfo-tag'>
