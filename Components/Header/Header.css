@@ -10,6 +10,10 @@
     background-image: linear-gradient(to left, rgba(102, 204, 241, 0.521), rgba(81, 81, 68, 0.772));
 }
 
+.sticky-header {
+    position: fixed;
+}
+
 .header-title {
     width: 45%;
     display: flex;
@@ -55,4 +59,17 @@
     padding: 2px;
     border: none;
     border-radius: 10px;
+}
+
+@media (max-width: 756px) {
+    .header {
+        flex-direction: column;
+        height: fit-content;
+    }
+
+    .search,
+    .header-title {
+        width: 100%;
+
+    }
 }

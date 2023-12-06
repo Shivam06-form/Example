@@ -1,8 +1,11 @@
 .second {
-    display: block;
+    display: flex;
+    flex-direction: column;
     width: 100%;
-    margin-top: 5%;
-
+    margin-top: 15%;
+    opacity: 100;
+    transition: all 800ms ease-in-out;
+    transform: translateY(-2rem)
 }
 
 .fps-container {
@@ -70,4 +73,15 @@
 .selected-button {
     color: whitesmoke;
     background-color: goldenrod;
+}
+
+@media (max-width: 756px) {
+    .fps-games {
+        height: 10rem;
+        font-size: x-small;
+    }
+
+    .fps-games img {
+        height: 5rem;
+    }
 }

@@ -1,18 +1,21 @@
-import React from 'react'
+import React, { useState, useEffect, useRef } from 'react'
 import './Header.css'
 import { useRouter } from 'next/navigation'
 
 const Header = ({ className }) => {
   const route = useRouter()
+  const RefProp = useRef(null)
+  const [showHeader, setShowHeader] = useState(false);
+
 
   return (
-    <div className={`header ${className}`}>
+    <div className={`header ${className} ${showHeader && "sticky-header"} `} ref={RefProp}>
       <div className='header-title'>
         <div
           onClick={() => {
             route.push('/')
           }}
-        > SHOPPING-APP</div>
+        > GAMING-APP</div>
         <summary>Search The Best Games...</summary>
         <div className='header-list'>
           <li>FPS</li>

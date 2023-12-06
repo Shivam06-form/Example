@@ -14,6 +14,9 @@
     justify-content: space-between;
     color: rgba(236, 222, 222, 0.541);
     margin-top: 5%;
+    opacity: 100;
+    transition: all 800ms ease-in-out;
+    transform: translateY(-2%)
 }
 
 .first-discription {
@@ -30,4 +33,22 @@
 .download-list img {
     width: 25px;
     height: 20px;
+}
+
+@media (max-width: 756px) {
+    .first-content {
+        flex-direction: column;
+    }
+
+    .first img {
+        width: 100%;
+    }
+
+    .first-discription {
+        width: 100%;
+    }
+
+    .download-list {
+        width: 75%;
+    }
 }

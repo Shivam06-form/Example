@@ -14,15 +14,15 @@ const GameInfoHeader = () => {
                         router.push('/')
                     }}
 
-                >HOME 🏡</li>
+                >HOME </li>
                 <div>/</div>
                 <li onClick={() => {
                     router.push('/')
-                }}>FPS 🔫</li>
+                }}>FPS </li>
                  <div>/</div>
                 <li onClick={() => {
                     router.push('/')
-                }}>STORY MODE 📔</li>
+                }}>STORY MODE  </li>
                  <div>/</div>
             </ul>
         </div>

@@ -16,11 +16,14 @@
     font-family: 'Courier New', Courier, monospace;
 }
 
+.gameinfo-content img {
+    width: 45%;
+}
+
 .gameinfo-card {
     display: flex;
     flex-direction: column;
     width: 50%;
-    /* background-color: aquamarine; */
     gap: 5%;
 }
 
@@ -50,7 +53,7 @@
     margin-top: 4%;
 }
 
-.gameinfo-tag-list  {
+.gameinfo-tag-list {
     display: flex;
     padding: 0;
     justify-content: space-between;
@@ -62,4 +65,24 @@
     background-color: rgb(116, 121, 121);
     padding: 1%;
     color: wheat;
+}
+
+@media (max-width: 965px) {
+    .gameinfo-content {
+        width: 95%;
+    }
+}
+
+@media (max-width: 730px) {
+    .gameinfo-content {
+        flex-direction: column;
+    }
+
+    .gameinfo-content img {
+        width: 95%;
+    }
+
+    .gameinfo-card {
+        width: 100%;
+    }
 }

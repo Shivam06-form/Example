@@ -1,12 +1,16 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import './Banner.css'
 import Image from 'next/image'
+import { Observer } from '../Custom/Observer'
 
 
 const Banner = () => {
+    const Ref = useRef(null)
+    const getObserver = Observer({ RefProp: Ref })
+
     return (
-        <div className='banner'>
-            <div style={{ width: "85%", height: "100%" }}>
+        <div ref={Ref} className={`banner  ${!getObserver.show && 'hidden'}`}  >
+            <div style={{ width: "85%", height: "100%" }}  >
                 {/* <div className='banner-title'>SOCIAL ICONS</div> */}
                 <div className='banner-icon-container'>
                     <Image className='banner-icons'

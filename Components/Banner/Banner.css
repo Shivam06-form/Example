@@ -1,6 +1,5 @@
 .banner {
     margin-top: 4%;
-    /* background-color: rgb(0, 128, 113); */
     width: 100%;
     padding: 2%;
     height: 70px;
@@ -9,6 +8,9 @@
     border: 2px solid whitesmoke;
     border-style: groove;
     border-radius: 10%;
+    opacity: 100;
+    transition: all 800ms ease-in-out;
+    transform: translateY(-2rem)
 }
 
 
@@ -28,4 +30,13 @@
 .banner-icons {
     width: 50px;
     height: 50px;
+}
+
+@media (max-width: 756px) {
+    .banner {
+        flex-direction: column;
+        height: fit-content;
+        font-size: small;
+        gap: 10px
+    }
 }

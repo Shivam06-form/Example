@@ -1,4 +1,4 @@
-body{
+body {
     margin: 0;
 }
 
@@ -29,4 +29,10 @@ body{
 .second-title {
     font-size: larger;
     font-weight: 800;
+}
+
+.hidden {
+    opacity: 0;
+    transform: translateY(2%);
+    transition: all 800ms;
 }

@@ -1,7 +1,8 @@
-import React from 'react'
+import React, { useRef } from 'react'
 
 import './FirstColumn.css'
 import Image from 'next/image'
+import { Observer } from '../Custom/Observer.js'
 
 let image1 = 'https://assets.xboxservices.com/assets/f2/09/f2093a9f-81ef-4ddd-9128-7e409ab3e6ad.jpg?n=Red-Dead-Redemption-II_GLP-Page-Hero-1084_1920x1080.jpg'
 let image2 = 'https://cdn1.epicgames.com/0584d2013f0149a791e7b9bad0eec102/offer/GTAV_EGS_Artwork_2560x1440_Landscaped%20Store-2560x1440-79155f950f32c9790073feaccae570fb.jpg'
@@ -53,10 +54,20 @@ const GamedownloadList = {
 
 
 const FirstColumn = () => {
+  const Ref1 = useRef()
+  const Ref2 = useRef()
+  const Ref3 = useRef()
+
+  const getObserver1 = Observer({ RefProp: Ref1 })
+  const getObserver2 = Observer({ RefProp: Ref2 })
+  const getObserver3 = Observer({ RefProp: Ref3 })
+
+
+
   return (
     <div className='first'>
       <div className='title'>LATEST GAMES</div>
-      <div className='first-content'>
+      <div className={`first-content  ${!getObserver1.show && "hidden"}`} ref={Ref1}>
         <Image src={image1} alt='rdr2' width={200} height={200} />
         <div className='first-discription'>
           <div className='second-title '>Explore the World of Red Dead Redemption 2</div>
@@ -75,12 +86,12 @@ const FirstColumn = () => {
               target='_blank'
               rel='noreferrer'
             >
-              <Image src={game.image} alt={game.Name} width={4} height={4}/></a>)}
+              <Image src={game.image} alt={game.Name} width={4} height={4} /></a>)}
           </div>
 
         </div>
       </div>
-      <div className='first-content'>
+      <div className={`first-content  ${!getObserver2.show && "hidden"}`} ref={Ref2}>
 
         <div className='first-discription'>
           <div className='second-title '>Experince the Open World Of Grand Theft Auto V</div>
@@ -98,14 +109,14 @@ const FirstColumn = () => {
               target='_blank'
               rel='noreferrer'
             >
-              <Image src={game.image} alt={game.Name} width={4} height={4}/></a>)}
+              <Image src={game.image} alt={game.Name} width={4} height={4} /></a>)}
           </div>
 
         </div>
-        <Image src={image2} alt='gtav' width={200} height={200}/>
+        <Image src={image2} alt='gtav' width={200} height={200} />
       </div>
-      <div className='first-content'>
-        <Image src={image3} alt='rdr2' width={200} height={200}/>
+      <div className={`first-content  ${!getObserver3.show && "hidden"}`} ref={Ref3}>
+        <Image src={image3} alt='rdr2' width={200} height={200} />
         <div className='first-discription'>
           <div className='second-title '>PUBG stands for {"PlayerUnknown's"} Battlegrounds</div>
           <summary
@@ -122,7 +133,7 @@ const FirstColumn = () => {
               target='_blank'
               rel='noreferrer'
             >
-              <Image src={game.image} alt={game.Name} width={4} height={4}/></a>)}
+              <Image src={game.image} alt={game.Name} width={4} height={4} /></a>)}
           </div>
 
         </div>

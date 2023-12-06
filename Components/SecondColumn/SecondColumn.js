@@ -1,9 +1,10 @@
-import React, { useState } from 'react'
+import React, { useState, useRef } from 'react'
 import FPSGAMES from '../../JSON/FpsGames.json'
 import './SecondColumn.css'
 import Image from 'next/image';
 import Link from 'next/link';
 import { useRouter } from "next/navigation";
+import { Observer } from '../Custom/Observer';
 
 
 
@@ -11,9 +12,8 @@ const RenderFpsGAmes = FPSGAMES.FPS.map((fps) => {
 
 
   return (
-    <a key={fps.id} className='fps-games'
+    <a key={fps.id} className={`fps-games `}
       rel='noreferrer'
-      ref={{ NAME: "SHIVAM" }}
       href={`GameInfo/FPS/${fps.id}`}>
       {/* <img src={fps.imageUrl} alt={fps.name} /> */}
       < Image src={fps.imageUrl} alt={fps.name} width={175} height={175} />
@@ -45,15 +45,20 @@ const RenderFpsGAmes = FPSGAMES.FPS.map((fps) => {
 
 
 const SecondColumn = () => {
-
-
-
-
   const [isNext, setIsNext] = useState(0);
+  const Ref = useRef(null)
+
+  const getObserver = Observer({ RefProp: Ref })
+
+
+  console.log(getObserver.show)
+
+
+
   return (
-    <div className='second'>
-      <div className='title'>TOP 10 FPS GAMES</div>
-      <div className='fps-container' >
+    <div className={`second ${getObserver.show && "hidden"}`} ref={Ref}>
+      <div className={`title`} >TOP 10 FPS GAMES</div>
+      <div className={`fps-container `} >
         <div className='fps-card'
           style={{ transform: `translate(${isNext}%)` }}
         >

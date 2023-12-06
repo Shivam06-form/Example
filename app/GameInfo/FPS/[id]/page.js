@@ -14,6 +14,14 @@ export default function RandomId(props) {
   const Game = (FPSGAMES.FPS.filter((fps) => `/${fps.id}` === ID))
 
   return (<React.Fragment>
+    <metadata>
+      <title>{Game[0].name}</title>
+      <meta name="description" content={Game[0].info ? Game[0].info : `"Search The Best In The World"`} />
+      <link
+        rel="icon"
+        href={Game[0].imageUrl}
+      />
+    </metadata>
     <GameInfoHeader />
     <div className="gameinfo">
       <div className="gameinfo-content">
@@ -31,8 +39,8 @@ export default function RandomId(props) {
           <div>
             <div className="avalibale">Avaliable in</div>
             <div className="gameinfo-platform">
-              {Game[0].steam && <Link href={Game[0].steam} >STEAM</Link>}
-              {Game[0].epic && <Link href={Game[0].epic} >EPIC</Link>}
+              {Game[0].steam && <Link href={Game[0].steam} target='_blank'>STEAM</Link>}
+              {Game[0].epic && <Link href={Game[0].epic} target='_blank' >EPIC</Link>}
             </div>
           </div>
           <div className='gameinfo-tag'>
