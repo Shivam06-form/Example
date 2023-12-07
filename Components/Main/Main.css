@@ -36,3 +36,10 @@ body {
     transform: translateY(2%);
     transition: all 800ms;
 }
+
+.button{
+    font-weight: 700;
+    border-radius: 10%;
+    width: fit-content;
+    
+}

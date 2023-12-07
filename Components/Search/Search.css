@@ -1,0 +1,46 @@
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities; */
+
+.search-games {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap: 2%;
+    margin-top: 2%;
+    flex-wrap: wrap;
+}
+
+.search-games-card {
+    display: block;
+    margin: auto;
+    width: 15rem;
+    height: 18rem;
+    aspect-ratio: 1 / 1;
+    cursor: pointer;
+}
+
+
+.search-games-card img {
+    width: 100%;
+    height: 10rem;
+    border-radius: 10px 0px 10px 0px;
+}
+
+.platform{
+    display: flex;
+    flex-direction: row;
+    /* background-color: aquamarine; */
+}
+
+.platform img{
+    width: 25px;
+    height: 25px;
+}
+
+@media (max-width: 768px) {
+    .search-games-card {
+        width: 20rem;
+    }
+
+}

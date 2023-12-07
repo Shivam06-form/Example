@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
+import StoreProvider from '..//lib/StoreProvider'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -9,7 +10,7 @@ export const metadata: Metadata = {
   Here, you can find all your favorite games, from first-person shooters
   (FPS) to open-world adventures. Whether you're
   looking for a new challenge or just want to relax and explore, we have something for everyone.`,
-  applicationName:"GAMING APP"
+  applicationName: "GAMING APP"
 }
 
 export default function RootLayout({
@@ -19,7 +20,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <StoreProvider>
+          {children}
+        </StoreProvider>
+      </body>
     </html>
   )
 }

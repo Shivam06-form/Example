@@ -19,7 +19,7 @@
 .fps-card {
     gap: 15px;
     transition: all 500ms ease-in-out;
-    width: 400%;
+    width: 300%;
     display: flex;
 }
 

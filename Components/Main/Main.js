@@ -6,16 +6,23 @@ import FirstColumn from '../FirstColumn/FirstColumn'
 import './Main.css'
 import SecondColumn from '../SecondColumn/SecondColumn'
 import Banner from '../Banner/Banner'
+import { useSelector } from 'react-redux'
+import Search from '../Search/Search'
 
 const Main = () => {
     const [showHeader, setShowHeader] = useState(false)
+    const State = useSelector((state) => state);
+    const show = (State.Search.searchTexts)
 
     return (
-        <div className='main'>
+        <div className='main' style={{
+            backgroundImage: `${show && "none"}`
+        }}>
             <Header showHeader={showHeader} />
-            <FirstColumn setShowHeader={setShowHeader} />
-            <SecondColumn />
-            <Banner />
+            {!show && <FirstColumn setShowHeader={setShowHeader} />}
+            {!show && <SecondColumn />}
+            {!show && <Banner />}
+            {show && <Search setShowHeader={setShowHeader} />}
         </div >
     )
 }

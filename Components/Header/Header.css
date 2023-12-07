@@ -62,14 +62,15 @@
 
 .search {
     outline: none;
-    font-size: small;
+    font-size: large;
     font-family: monospace;
-    height: 25%;
+    height: 35%;
     width: 35%;
     margin-top: auto;
     padding: 2px;
     border: none;
     border-radius: 10px;
+    color: blue;
 }
 
 

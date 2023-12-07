@@ -1,12 +1,21 @@
-import React, { useRef } from 'react'
+import React, { useRef, useState, useEffect } from 'react'
 import './Header.css'
 import { useRouter } from 'next/navigation'
+import { GAMES } from '../../JSON/FpsGames.json'
+import { SEARCH, useAppDispatch } from '../../lib/store'
+import { useDispatch } from 'react-redux'
 
 const Header = ({ className, showHeader }) => {
+  const [search, setSearch] = useState('')
   const route = useRouter()
   const RefProp = useRef(null)
+  const dispatch = useDispatch()
 
 
+
+
+
+  // console.log(GAMES.filter((game) => game.name.toLowerCase().includes(search.toLowerCase())))
 
   return (
     <div className={`header ${className} ${showHeader && "sticky-header"} `} ref={RefProp}>
@@ -23,7 +32,24 @@ const Header = ({ className, showHeader }) => {
           <li>Story Mode</li>
         </div>
       </div>
-      <input placeholder='Search The Latest Games...' className={`search ${showHeader && 'sticky-search '}`} />
+      {!showHeader && <input
+        value={search}
+        onChange={(e) => {
+          setSearch(e.target.value)
+          dispatch(SEARCH.Search({ TEXT: e.target.value }))
+
+        }}
+        placeholder='Search The Latest Games...'
+        className={`search ${showHeader && 'sticky-search '}`} />}
+      {showHeader && <button
+        className='button'
+        onClick={() => {
+          window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+          });
+        }}
+      >SEARCH</button>}
     </div>
 
   )
