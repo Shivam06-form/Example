@@ -25,16 +25,23 @@
     animation: mymove 5s infinite;
 }
 
+
+
 .top-button img {
     padding: 2%;
-    width: 40%;
-    height: 40%;
-    border-radius: 50px;
+    width: 15rem;
+    height: 15rem;
+    /* border-radius: 50px; */
     cursor: pointer;
     filter: brightness(2);
     /* background-color: gray; */
 
 }
+
+/* .pubg {
+    height: 50%;
+    height: 100%;
+} */
 
 
 .top-title {

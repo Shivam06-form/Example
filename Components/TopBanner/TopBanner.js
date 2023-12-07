@@ -16,18 +16,20 @@ const TopBanner = () => {
                         onClick={() => {
                             window.location.href = `GameInfo/13`
                         }}
-                        src={"https://pngimg.com/d/pubg_PNG32.png"}
-                        width={200}
-                        height={200}
+                        src={"https://www.freepnglogos.com/uploads/pubg-png/home-pubg-skins-21.png"}
+                        width={350}
+                        height={350}
                         alt='pubg'
+                        className='pubg'
                     />
                     <Image
+                    className='rdr2'
                         onClick={() => {
-                            window.location.href = `GameInfo/13`
+                            window.location.href = `GameInfo/11`
                         }}
-                        src={"https://pngimg.com/d/red_dead_redemption_PNG27.png"}
-                        width={200}
-                        height={200}
+                        src={"https://www.pngmart.com/files/22/Red-Dead-Redemption-II-Logo-PNG-Isolated-Pic.png"}
+                        width={350}
+                        height={350}
                         alt='rdr2'
 
                     />
