@@ -6,6 +6,7 @@ import FirstColumn from '../FirstColumn/FirstColumn'
 import './Main.css'
 import SecondColumn from '../SecondColumn/SecondColumn'
 import Banner from '../Banner/Banner'
+import TopBanner from '../TopBanner/TopBanner'
 import { useSelector } from 'react-redux'
 import Search from '../Search/Search'
 
@@ -19,6 +20,7 @@ const Main = () => {
             backgroundImage: `${show && "none"}`
         }}>
             <Header showHeader={showHeader} />
+            {!show && <TopBanner setShowHeader={setShowHeader} />}
             {!show && <FirstColumn setShowHeader={setShowHeader} />}
             {!show && <SecondColumn />}
             {!show && <Banner />}

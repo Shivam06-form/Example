@@ -2,13 +2,15 @@
     display: flex;
     width: 100%;
     margin: auto;
-    border-radius: 5px;
+    /* border-radius: 5px; */
     color: whitesmoke;
     padding: 1.5%;
     height: 85px;
     justify-content: space-between;
     transition: all 800ms ease-in-out;
     background-image: linear-gradient(to left, rgba(102, 204, 241, 0.521), rgba(81, 81, 68, 0.772));
+    /* background-image: url('https://i.pinimg.com/originals/4f/f9/fe/4ff9fefafc58789a76bc3a48ce4177b8.jpg'); */
+
 }
 
 .sticky-header {

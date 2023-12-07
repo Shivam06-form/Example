@@ -2,6 +2,7 @@
     display: block;
     width: 100%;
     margin-top: 5%;
+    /* background-color: aquamarine; */
 }
 
 .first img {
@@ -12,7 +13,7 @@
 .first-content {
     display: flex;
     justify-content: space-between;
-    color: rgba(236, 222, 222, 0.541);
+    color: rgba(49, 48, 48, 0.541);
     margin-top: 5%;
     opacity: 100;
     transition: all 800ms ease-in-out;
