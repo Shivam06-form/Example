@@ -3,19 +3,22 @@ import FPSGAMES from '../../JSON/FpsGames.json'
 import './SecondColumn.css'
 import Image from 'next/image';
 import Link from 'next/link';
-import { useRouter } from "next/navigation";
 import { Observer } from '../Custom/Observer';
 
 
 
-const RenderFpsGAmes = FPSGAMES.GAMES.slice(0, 10).map((fps) => {
+const RenderFpsGAmes = ({ Ref2 }) => FPSGAMES.GAMES.slice(0, 10).map((fps) => {
+
   return (
     <a key={fps.id} className={`fps-games`}
+      onMouseEnter={(e) => {
+
+      }}
+
       rel='noreferrer'
       href={`GameInfo/${fps.id}`}>
-      {/* <img src={fps.imageUrl} alt={fps.name} /> */}
       < Image src={fps.imageUrl} alt={fps.name} width={250} height={250} />
-      <div className={`platform `}>
+      <div className={`platform`} ref={Ref2}>
         <div
         >Available on</div>
         <div className='platform-link' >
@@ -25,7 +28,7 @@ const RenderFpsGAmes = FPSGAMES.GAMES.slice(0, 10).map((fps) => {
                 key={game.id}
                 href={game.Url} target='_blank' rel='noreferrer' >
                 <Image
-                  width={24} height={24}
+                  width={400} height={400}
                   src={game.image}
                   alt={fps.name} />
               </Link>
@@ -43,6 +46,7 @@ const RenderFpsGAmes = FPSGAMES.GAMES.slice(0, 10).map((fps) => {
 const SecondColumn = () => {
   const [isNext, setIsNext] = useState(0);
   const Ref = useRef(null)
+  const Ref2 = useRef(null)
 
   const getObserver = Observer({ RefProp: Ref })
 
@@ -54,7 +58,7 @@ const SecondColumn = () => {
         <div className='fps-card'
           style={{ transform: `translate(${isNext}%)` }}
         >
-          {RenderFpsGAmes}
+          {RenderFpsGAmes({ Ref2: Ref2 })}
         </div>
       </div>
       <div className='button-container'>

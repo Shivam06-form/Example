@@ -29,11 +29,11 @@ const Search = ({ setShowHeader }) => {
                 }}
                 ref={Ref}
             >
-                <Image src={game.imageUrl} width={250} height={250} alt={game.name} />
+                <Image src={game.imageUrl} width={400} height={400} alt={game.name} />
                 <div className='summery' style={{ color: "black" }}>
                     {game.name}
                 </div>
-                <div className='platform'>
+                <div className='search-platform'>
                     {game.platform.map((plat) => {
                         return (<div
                             key={plat.id}

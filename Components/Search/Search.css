@@ -27,12 +27,16 @@
     border-radius: 10px 0px 10px 0px;
 }
 
-.platform{
+.search-platform{
     display: flex;
     flex-direction: row;
     /* background-color: aquamarine; */
 }
 
+.search-platform img{
+    width: 25px;
+    height: 25px;
+}
 .platform img{
     width: 25px;
     height: 25px;
