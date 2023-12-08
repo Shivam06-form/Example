@@ -19,8 +19,8 @@ const Main = () => {
         <div className='main' style={{
             backgroundImage: `${show && "none"}`
         }}>
-            <Header showHeader={showHeader} />
-            {!show && <TopBanner setShowHeader={setShowHeader} />}
+            <Header showHeader={showHeader} show={show}/>
+            {/* {!show && <TopBanner setShowHeader={setShowHeader} />} */}
             {!show && <FirstColumn setShowHeader={setShowHeader} />}
             {!show && <SecondColumn />}
             {!show && <Banner />}

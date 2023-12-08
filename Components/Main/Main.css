@@ -7,7 +7,7 @@ body {
     height: 100%;
     display: flex;
     flex-direction: column;
-    padding: 5%;
+    font-family: cursive;
     background-repeat: no-repeat;
 }
 
@@ -24,6 +24,7 @@ body {
     /* width: 75%; */
     /* margin-top: 2%; */
     font-weight: 400;
+    font-size: small;
 }
 
 .second-title {
@@ -37,9 +38,9 @@ body {
     transition: all 800ms;
 }
 
-.button{
+.button {
     font-weight: 700;
     border-radius: 10%;
     width: fit-content;
-    
+
 }

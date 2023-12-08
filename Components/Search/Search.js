@@ -21,12 +21,13 @@ const Search = ({ setShowHeader }) => {
 
     const SearchGames = (GAMES.filter((game) =>
         game.name.toLocaleLowerCase().trim().includes(searchText.toLocaleLowerCase().trim())))
-    const RenderSearchGames = SearchGames.map((game) => {
+    const RenderSearchGames = GAMES.map((game) => {
         return (
             <div key={game.id} class='search-games-card'
                 onClick={() => {
                     window.location.href = `GameInfo/${game.id}`
                 }}
+                ref={Ref}
             >
                 <Image src={game.imageUrl} width={250} height={250} alt={game.name} />
                 <div className='summery' style={{ color: "black" }}>
@@ -50,7 +51,7 @@ const Search = ({ setShowHeader }) => {
     )
 
     return (
-        <div className='search-games' ref={Ref}>
+        <div className='search-games' >
             {RenderSearchGames}
         </div>
     )

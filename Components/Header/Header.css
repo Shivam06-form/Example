@@ -1,6 +1,11 @@
+.header-image {
+    background-image: url('https://images.pexels.com/photos/1485894/pexels-photo-1485894.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
+
+    width: 100%;
+}
+
 .header {
     display: flex;
-    width: 100%;
     margin: auto;
     /* border-radius: 5px; */
     color: whitesmoke;
@@ -8,8 +13,7 @@
     height: 85px;
     justify-content: space-between;
     transition: all 800ms ease-in-out;
-    background-image: linear-gradient(to left, rgba(102, 204, 241, 0.521), rgba(81, 81, 68, 0.772));
-    /* background-image: url('https://i.pinimg.com/originals/4f/f9/fe/4ff9fefafc58789a76bc3a48ce4177b8.jpg'); */
+    /* background-image: linear-gradient(to left, rgba(102, 204, 241, 0.521), rgba(81, 81, 68, 0.772)); */
 
 }
 
@@ -25,6 +29,7 @@
     width: 98%;
     opacity: 100;
     z-index: 9999;
+    /* border-bottom: groove; */
 }
 
 .header-title {
@@ -58,7 +63,8 @@
 .header-list li {
     margin-top: auto;
     list-style: none;
-    font-size: large;
+    font-size: small;
+    /* background-color: aquamarine; */
 }
 
 
