@@ -1,7 +1,108 @@
 .third {
     display: flex;
+    width: 100%;
+    height: 35rem;
+    /* background-color: black; */
+    margin-top: 10%;
+    background-image: url('https://wallpapercave.com/wp/wp5132020.jpg');
+    background-repeat: no-repeat;
+    overflow: hidden;
+    transition: all 800ms ease-in-out;
+    transform: translateY(-2rem);
 }
 
-.third img{
-    width: 250px;
+.third-container {
+    display: flex;
+    width: 85%;
+    gap: 1%;
+    margin: auto;
+}
+
+.third-content {
+    position: relative;
+    width: 18rem;
+    height: 18rem;
+}
+
+.third-content-inside {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    /* background-color: yellow; */
+    transition: all 600ms;
+}
+
+
+.third-content-inside:hover {
+    transform: rotateY(180deg);
+}
+
+.third-content-inside img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    background-color: green;
+}
+
+.image-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    background-color: rgba(33, 33, 33, 0.187);
+    transform: rotateY(180deg);
+    border-style: dotted;
+    /* display: flex; */
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 10%
+}
+
+/* .image-back div{
+    background-color: bisque;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+} */
+
+
+.image-back h1 {
+    font-weight: bolder;
+    text-shadow: 1px 1px 2px yellow;
+}
+
+.image-back img {
+    width: 50%;
+    height: 20%;
+    background-color: ;
+}
+
+@media (max-width: 768px) {
+    .third-container {
+        width: 96%;
+    }
+
+}
+
+@media (max-width: 568px) {
+
+
+    .third {
+        height: fit-content;
+    }
+
+    .third-container {
+        flex-direction: column-reverse;
+        margin-right: auto;
+        /* background-color: antiquewhite; */
+        align-items: center;
+        gap: 10px;
+    }
 }

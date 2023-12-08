@@ -23,10 +23,10 @@ const Main = () => {
             <Header showHeader={showHeader} show={show} />
             {/* {!show && <TopBanner setShowHeader={setShowHeader} />} */}
             {!show && <FirstColumn setShowHeader={setShowHeader} />}
+            {!show && <ThirdColumn />}
             {!show && <SecondColumn />}
             {!show && <Banner />}
             {show && <Search setShowHeader={setShowHeader} />}
-            {/* {!show && <ThirdColumn />} */}
         </div > 
     )
 }

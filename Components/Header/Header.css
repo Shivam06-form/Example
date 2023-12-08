@@ -77,7 +77,7 @@
     width: 35%;
     margin-top: auto;
     padding: 2px;
-    border: none;
+    border: groove;
     border-radius: 10px;
     color: blue;
 }

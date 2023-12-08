@@ -43,7 +43,7 @@ const FirstColumn = ({setShowHeader}) => {
         }}
 
         className={`first-content  ${!getObserver1.show && "hidden"}`} ref={Ref1}>
-        <Image src={LATEST[0].imageUrl} alt='rdr2' width={200} height={200} />
+        <Image src={LATEST[0].imageUrl} alt='rdr2' width={500} height={500} />
         <div className='first-discription'>
           <div className='second-title '>{LATEST[0].title}</div>
           <summary
@@ -84,11 +84,11 @@ const FirstColumn = ({setShowHeader}) => {
               target='_blank'
               rel='noreferrer'
             >
-              <Image src={game.image} alt={game.Name} width={4} height={4} /></a>)}
+              <Image src={game.image} alt={game.Name} width={300} height={300} /></a>)}
           </div>
 
         </div>
-        <Image src={LATEST[1].imageUrl} alt='gtav' width={200} height={200} />
+        <Image src={LATEST[1].imageUrl} alt='gtav' width={500} height={500} />
       </div>
       <div
         onClick={() => {
@@ -96,7 +96,7 @@ const FirstColumn = ({setShowHeader}) => {
           window.location.href = `GameInfo/${LATEST[2].id}`
         }}
         className={`first-content  ${!getObserver3.show && "hidden"}`} ref={Ref3}>
-        <Image src={LATEST[2].imageUrl} alt='rdr2' width={200} height={200} />
+        <Image src={LATEST[2].imageUrl} alt='rdr2' width={500} height={500} />
         <div className='first-discription'>
           <div className='second-title '>{LATEST[2].title}</div>
           <summary
@@ -111,7 +111,7 @@ const FirstColumn = ({setShowHeader}) => {
               target='_blank'
               rel='noreferrer'
             >
-              <Image src={game.image} alt={game.Name} width={4} height={4} /></a>)}
+              <Image src={game.image} alt={game.Name} width={300} height={300} /></a>)}
           </div>
 
         </div>
