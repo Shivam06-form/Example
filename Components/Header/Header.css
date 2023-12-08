@@ -8,11 +8,12 @@
     display: flex;
     margin: auto;
     /* border-radius: 5px; */
-    color: whitesmoke;
+    color: rgb(7, 7, 7);
     padding: 1.5%;
     height: 85px;
     justify-content: space-between;
     transition: all 800ms ease-in-out;
+    background-color: whitesmoke;
     /* background-image: linear-gradient(to left, rgba(102, 204, 241, 0.521), rgba(81, 81, 68, 0.772)); */
 
 }

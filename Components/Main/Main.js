@@ -3,8 +3,9 @@
 import React, { useState } from 'react'
 import Header from '../Header/Header'
 import FirstColumn from '../FirstColumn/FirstColumn'
-import './Main.css'
 import SecondColumn from '../SecondColumn/SecondColumn'
+import ThirdColumn from '../ThirdColumn/ThirdColumn'
+import './Main.css'
 import Banner from '../Banner/Banner'
 import TopBanner from '../TopBanner/TopBanner'
 import { useSelector } from 'react-redux'
@@ -19,13 +20,14 @@ const Main = () => {
         <div className='main' style={{
             backgroundImage: `${show && "none"}`
         }}>
-            <Header showHeader={showHeader} show={show}/>
+            <Header showHeader={showHeader} show={show} />
             {/* {!show && <TopBanner setShowHeader={setShowHeader} />} */}
             {!show && <FirstColumn setShowHeader={setShowHeader} />}
             {!show && <SecondColumn />}
             {!show && <Banner />}
             {show && <Search setShowHeader={setShowHeader} />}
-        </div >
+            {/* {!show && <ThirdColumn />} */}
+        </div > 
     )
 }
 

@@ -10,15 +10,13 @@ import { Observer } from '../Custom/Observer';
 
 const RenderFpsGAmes = FPSGAMES.GAMES.slice(0, 10).map((fps) => {
   return (
-    <a key={fps.id} className={`fps-games `}
+    <a key={fps.id} className={`fps-games`}
       rel='noreferrer'
       href={`GameInfo/${fps.id}`}>
       {/* <img src={fps.imageUrl} alt={fps.name} /> */}
       < Image src={fps.imageUrl} alt={fps.name} width={250} height={250} />
-      <siv>{fps.name}</siv>
-      <div className='platform'>
+      <div className={`platform `}>
         <div
-        // className='summery'
         >Available on</div>
         <div className='platform-link' >
           {fps.platform.map((game) => {
@@ -27,7 +25,6 @@ const RenderFpsGAmes = FPSGAMES.GAMES.slice(0, 10).map((fps) => {
                 key={game.id}
                 href={game.Url} target='_blank' rel='noreferrer' >
                 <Image
-                  style={{ width: "80%", height: "80%" }}
                   width={24} height={24}
                   src={game.image}
                   alt={fps.name} />
@@ -37,6 +34,7 @@ const RenderFpsGAmes = FPSGAMES.GAMES.slice(0, 10).map((fps) => {
         </div>
 
       </div>
+      <div className={`fps-games-title `}>{fps.name}</div>
     </a >
   )
 })
@@ -50,7 +48,7 @@ const SecondColumn = () => {
 
 
   return (
-    <div className={`second ${getObserver.show && "hidden"}`} ref={Ref}>
+    <div className={`second ${!getObserver.show && "hidden"}`} ref={Ref}>
       <div className={`title`} >TOP 10 FPS GAMES</div>
       <div className={`fps-container `} >
         <div className='fps-card'

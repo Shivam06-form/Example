@@ -63,11 +63,13 @@
 }
 
 .top h2 {
+    display: block;
     color: rgb(243, 240, 236);
     filter: blur(0px);
     padding: 0;
     font-size: xx-large;
-    /* width: 70%; */
+    text-shadow: 1px 1px 2px red, 0 0 1em rgb(4, 4, 88), 0 0 0.2em blue;
+    transition: all 1s;
 }
 
 
@@ -79,13 +81,13 @@
 
 @keyframes mymove {
 
-    from {
+    /* from {
         transform: rotateY(360deg);
     }
 
     to {
         transform: rotateY(-360deg);
-    }
+    } */
 
 }
 

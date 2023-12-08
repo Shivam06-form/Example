@@ -37,7 +37,7 @@ const TopBanner = () => {
                 </div>
             </div>
 
-            <Image src={"https://i.redd.it/4d3qhbf19wv41.png"}
+            <Image src={"https://juststickers.in/wp-content/uploads/2017/04/league-of-gamers.png"}
                 alt='PUBG'
                 height={200}
                 width={200}
