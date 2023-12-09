@@ -54,7 +54,6 @@
     background-color: rgba(33, 33, 33, 0.187);
     transform: rotateY(180deg);
     border-style: dotted;
-    /* display: flex; */
     display: flex;
     flex-direction: column-reverse;
     justify-content: space-evenly;
@@ -81,18 +80,30 @@
 .image-back img {
     width: 50%;
     height: 20%;
-    background-color: ;
+    /* background-color: ; */
 }
 
 @media (max-width: 768px) {
-    .third-container {
-        width: 96%;
+
+
+    .third-content {
+        width: 12rem;
+        height: 12rem;
     }
+
+    .third {
+        height: 25rem;
+    }
+
 
 }
 
 @media (max-width: 568px) {
 
+    .third-content {
+        width: 8rem;
+        height: 8rem;
+    }
 
     .third {
         height: fit-content;
@@ -101,6 +112,8 @@
     .third-container {
         flex-direction: column-reverse;
         margin-right: auto;
+        margin-top: 5%;
+        margin-bottom: 5%;
         /* background-color: antiquewhite; */
         align-items: center;
         gap: 10px;
