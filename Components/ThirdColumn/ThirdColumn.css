@@ -103,7 +103,7 @@
     }
 
     .third-container {
-        flex-direction: column-reverse;
+        flex-wrap: wrap;
         margin-right: auto;
         margin-top: 5%;
         margin-bottom: 5%;
