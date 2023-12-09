@@ -21,7 +21,7 @@ const Search = ({ setShowHeader }) => {
 
     const SearchGames = (GAMES.filter((game) =>
         game.name.toLocaleLowerCase().trim().includes(searchText.toLocaleLowerCase().trim())))
-    const RenderSearchGames = GAMES.map((game) => {
+    const RenderSearchGames = SearchGames.map((game) => {
         return (
             <div key={game.id} class='search-games-card'
                 onClick={() => {
