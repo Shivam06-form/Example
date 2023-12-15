@@ -41,7 +41,7 @@
 }
 
 
-.hide{
+.hide {
     display: none;
     opacity: 0;
 }
@@ -141,6 +141,9 @@
         height: 10rem;
     }
 
-
+    .fps-games-title,
+    .platform-link {
+        height: 1rem;
+    }
 
 }

@@ -28,6 +28,7 @@ const RenderFpsGAmes = ({ Ref2 }) => FPSGAMES.GAMES.slice(0, 10).map((fps) => {
                 key={game.id}
                 href={game.Url} target='_blank' rel='noreferrer' >
                 <Image
+                // hidden
                   width={400} height={400}
                   src={game.image}
                   alt={fps.name} />
@@ -50,7 +51,7 @@ const SecondColumn = () => {
 
   const getObserver = Observer({ RefProp: Ref })
 
-
+ 
   return (
     <div className={`second ${!getObserver.show && "hidden"}`} ref={Ref}>
       <div className={`title`} >TOP 10 FPS GAMES</div>
