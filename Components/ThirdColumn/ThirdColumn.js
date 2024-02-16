@@ -31,8 +31,10 @@ const ThirdColumn = () => {
 
     const getObserver = Observer({ RefProp: Ref })
 
+    const { show } = getObserver
+
     return (
-        <div className={`third ${!getObserver.show && "hidden"}`} ref={Ref}>
+        <div className={`third ${!show && "hidden"}`} ref={Ref}>
             <div className='third-container'>
                 {Images.map((image) => {
                     return (<div className='third-content' key={image.id}>
@@ -47,9 +49,6 @@ const ThirdColumn = () => {
                                     alt=''
                                 />
                                 <h1>{image.imbd}</h1>
-
-
-
                             </div>
                         </div>
                     </div>)

@@ -24,9 +24,6 @@ const FirstColumn = ({setShowHeader}) => {
   }, [Ref1, setShowHeader])
 
 
-
-
-
   const getObserver1 = Observer({ RefProp: Ref1 })
   const getObserver2 = Observer({ RefProp: Ref2 })
   const getObserver3 = Observer({ RefProp: Ref3 })

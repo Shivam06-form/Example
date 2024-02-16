@@ -8,7 +8,6 @@ import { Observer } from '../Custom/Observer';
 
 
 const RenderFpsGAmes = ({ Ref2 }) => FPSGAMES.GAMES.slice(0, 10).map((fps) => {
-
   return (
     <a key={fps.id} className={`fps-games`}
       onMouseEnter={(e) => {

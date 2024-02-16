@@ -7,6 +7,7 @@ export default function Home() {
     <Fragment>
       <metadata>
         <title>GAMING APP</title>
+        <meta name="viewport" content="width=device-width, initial-scale=0.78" />
         <meta name="description" content="Search The Best In The World" />
         <link
           rel="icon"
