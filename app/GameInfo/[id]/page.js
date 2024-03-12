@@ -6,16 +6,15 @@ import Image from "next/image";
 import './GameInfo.css'
 import Link from "next/link";
 import GameInfoHeader from '../../../Components/GameInfoHeader/GameInfoHeader'
+import { useSelector } from 'react-redux';
 
 
 export default function RandomId(props) {
 
 
-
   const ID = (window.location.pathname.replace("/GameInfo", ""))
   const Game = (GAMES.filter((fps) => `/${fps.id}` === ID))
 
-  console.log(Game)
 
   return (<React.Fragment>
     <metadata>
@@ -47,7 +46,7 @@ export default function RandomId(props) {
                 <div className="gameinfo-platform" key={game.id} >  <Link href={game.Url} target='_blank'>
                   {game.Name}
                 </Link>
-                <Image src={game.image} alt={game.Name} width={100} height={100}/>
+                  <Image src={game.image} alt={game.Name} width={100} height={100} />
                 </div>
               )}
 

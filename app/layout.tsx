@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
-import StoreProvider from '..//lib/StoreProvider'
+import StoreProvider from '../lib/StoreProvider'
+import './globals.css'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -20,7 +21,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <meta name="viewport" content="width=device-width, initial-scale=0.7" />
       <body className={inter.className}>
+        <div id='background'></div>
         <StoreProvider>
           {children}
         </StoreProvider>

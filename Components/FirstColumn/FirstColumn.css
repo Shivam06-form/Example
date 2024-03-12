@@ -17,8 +17,8 @@
     color: rgba(49, 48, 48, 0.541);
     margin-top: 5%;
     opacity: 100;
-    transition: all 800ms ease-in-out;
-    transform: translateY(-2%);
+    transition: all 4s allow-discrete;;
+    transform: scale(1);
     cursor: pointer;
 }
 

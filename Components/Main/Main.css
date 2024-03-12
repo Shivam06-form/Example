@@ -34,7 +34,7 @@ body {
 
 .hidden {
     opacity: 0;
-    transform: translateY(2%);
+    transform: scale(0.5);
     transition: all 800ms;
 }
 
