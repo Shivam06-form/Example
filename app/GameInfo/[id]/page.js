@@ -17,8 +17,10 @@ export default function RandomId(props) {
 
   const dispatch = useDispatch()
 
+  ///////////// Getting Favorite Reducer From Redux Store //////
   const Favourite = useSelector((favourite) => favourite.Favorite)
 
+  //////// Getting All Favourites ////////////
   useEffect(() => {
     dispatch(FAVORITE.getAllFav())
   }, [dispatch]);
@@ -52,6 +54,8 @@ export default function RandomId(props) {
             `}</div>
           <div>
             <div className="avalibale">Available in
+
+
               {filter.length !== 1 && <button className="Add-Button"
                 onClick={() => {
                   // if (!filter[0]) {
@@ -59,6 +63,8 @@ export default function RandomId(props) {
                   // }
                 }}
               >ADD TO FAV</button>}
+
+
               {filter.length === 1 && <button className="Remove-Button"
                 onClick={() => {
                   // if (!filter[0]) {
