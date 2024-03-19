@@ -68,6 +68,24 @@
     /* background-color: aquamarine; */
 }
 
+.header-list li:nth-child(4) {
+    display: flex;
+    padding: 0;
+    gap: 0.2rem
+}
+
+.header-list li:nth-child(4) div {
+    background-color: rgb(31, 7, 7);
+    border-radius: 100%;
+    padding: 0px;
+    width: 2rem;
+    text-align: center;
+    font-size: small;
+    color: whitesmoke;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
 
 .search {
     outline: none;

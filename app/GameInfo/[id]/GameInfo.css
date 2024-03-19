@@ -44,6 +44,41 @@
     font-weight: 800;
 }
 
+/* Add Button Css */
+
+.Add-Button {
+    border: none;
+    background-color: greenyellow;
+    transition: all 300ms;
+    cursor: pointer;
+}
+
+
+.Add-Button:hover {
+    background-color: darkgreen;
+    color: whitesmoke;
+    transition: all 300ms;
+}
+
+/* Remove Button Css */
+
+.Remove-Button {
+    border: none;
+    background-color: rgba(255, 0, 0, 0.804);
+    transition: all 300ms;
+    cursor: pointer;
+    color: whitesmoke;
+}
+
+.Remove-Button:hover {
+    background-color: rgb(100, 37, 0);
+    color: whitesmoke;
+    transition: all 300ms;
+}
+
+
+
+
 .gameinfo-tag {
     display: flex;
     flex-direction: column;

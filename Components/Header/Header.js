@@ -3,7 +3,7 @@ import './Header.css'
 import { useRouter } from 'next/navigation'
 import { GAMES } from '../../JSON/FpsGames.json'
 import { SEARCH, useAppDispatch } from '../../lib/store'
-import { useDispatch } from 'react-redux'
+import { useDispatch, useSelector } from 'react-redux'
 import TopBanner from '../TopBanner/TopBanner'
 
 const Header = ({ className, showHeader, show }) => {
@@ -12,7 +12,8 @@ const Header = ({ className, showHeader, show }) => {
   const RefProp = useRef(null)
   const dispatch = useDispatch()
 
-
+  const Favourite = useSelector((fav) => fav.Favorite)
+  const ListLength = (Favourite.List.length)
 
 
 
@@ -32,6 +33,7 @@ const Header = ({ className, showHeader, show }) => {
             <li>FPS</li>
             <li>OPEN WORLD</li>
             <li>Story Mode</li>
+            <li>Favourite <div>{ListLength}</div></li>
           </div>
         </div>
         {!showHeader && <input

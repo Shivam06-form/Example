@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import FPSGAMES from '../../JSON/FpsGames.json';
 import Image from 'next/image';
 import Link from 'next/link';
-import { useDispatch, useSelector } from 'react-redux';
+import { useDispatch } from 'react-redux';
 import { OVERLAY } from '@/lib/store';
 
 
@@ -21,7 +21,6 @@ const RenderFpsGames = ({ isNext, Ref2 }) => {
     const onOpen = () => {
         dispatch(OVERLAY.onOpen(true))
     }
-
 
 
 

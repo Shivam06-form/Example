@@ -1,19 +1,30 @@
 "use client";
 
 import { GAMES } from '../../..//JSON/FpsGames.json'
-import React from "react";
+import React, { useEffect } from "react";
 import Image from "next/image";
 import './GameInfo.css'
 import Link from "next/link";
 import GameInfoHeader from '../../../Components/GameInfoHeader/GameInfoHeader'
-import { useSelector } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
+import { FAVORITE } from '@/lib/store';
 
 
 export default function RandomId(props) {
 
+  const ID = props.params.id
+  const Game = (GAMES.filter((fps) => fps.id === +ID))
 
-  const ID = (window.location.pathname.replace("/GameInfo", ""))
-  const Game = (GAMES.filter((fps) => `/${fps.id}` === ID))
+  const dispatch = useDispatch()
+
+  const Favourite = useSelector((favourite) => favourite.Favorite)
+
+  useEffect(() => {
+    dispatch(FAVORITE.getAllFav())
+  }, [dispatch]);
+
+  ///////////FILTER OBJECT IS ALREADY IN FAVORITE LIST ////////////
+  const filter = Favourite.List.filter(favourite => (+favourite.id === +ID))
 
 
   return (<React.Fragment>
@@ -40,7 +51,23 @@ export default function RandomId(props) {
              with the player experiencing the action directly through the eyes of the main character
             `}</div>
           <div>
-            <div className="avalibale">Available in</div>
+            <div className="avalibale">Available in
+              {filter.length !== 1 && <button className="Add-Button"
+                onClick={() => {
+                  // if (!filter[0]) {
+                  dispatch(FAVORITE.AddToFav({ item: Game[0] }))
+                  // }
+                }}
+              >ADD TO FAV</button>}
+              {filter.length === 1 && <button className="Remove-Button"
+                onClick={() => {
+                  // if (!filter[0]) {
+                  dispatch(FAVORITE.RemoveFav({ ID: +Game[0].id }))
+                  // }
+                }}
+              >REMOVE FAVORITE</button>}
+            </div>
+
             <div >
               {Game[0].platform.map((game) =>
                 <div className="gameinfo-platform" key={game.id} >  <Link href={game.Url} target='_blank'>

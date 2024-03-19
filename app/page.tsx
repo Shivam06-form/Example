@@ -1,11 +1,11 @@
 
 "use client"
-import React from 'react'
+import React, { useEffect } from 'react'
 import Main from '../Components/Main/Main'
 import { Fragment } from 'react'
 import GameDetials from '../Components/Commen/GameDetials'
 import { useDispatch, useSelector } from 'react-redux'
-import { OVERLAY } from '@/lib/store'
+import { FAVORITE, OVERLAY } from '@/lib/store'
 
 export default function Home() {
   const dispatch = useDispatch()
@@ -15,6 +15,10 @@ export default function Home() {
   const onClose = () => {
     dispatch(OVERLAY.onClose(false))
   }
+
+  useEffect(() => {
+    dispatch(FAVORITE.getAllFav())
+  }, [dispatch]);
 
   return (
     <Fragment>
